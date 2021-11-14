@@ -1,0 +1,185 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Patua+One" rel="stylesheet">
+
+    <meta charset="UTF-8">
+</head>
+<body >
+	<section>
+		<div id="main">
+			<img id="image" src="image/logo.png" alt="Audrey's Image" title="Audrey Hepburn">
+		<h1 id="title">STARBUCKS</h1>
+		<h2 id="subtitle">This will help us improve our service to our dearest customers</h2>
+
+		
+
+		<form id="survey-form">
+			<div class="form-group">
+	        	<label id="name-label" for="name">NAME</label>
+	        	<input
+	        		class="clean-slide"
+	        	  	type="text"
+	        	  	name="name"
+	        	  	id="name"
+	        	  	class="form-control"
+	        	  	placeholder="Enter your name here"
+	        	  	required
+	        	/>
+    		</div>
+    		<div class="form-group">
+	        	<label id="email-label" for="email">E-MAIL</label>
+	        	<input
+	        		class="clean-slide"
+	        	  	type="email"
+	        	  	name="email"
+	        	  	id="email"
+	        	  	class="form-control"
+	        	  	placeholder="Enter your e-mail address here"
+	        	  	required
+	        	/>
+    		</div>
+    		<div class="form-group">
+      			<label id="number-label" for="number"
+      			  >AGE</label
+      			>
+      			<input
+      				class="clean-slide"
+      			  	type="number"
+      			  	name="age"
+      			  	id="number"
+      			  	min="10"
+      			  	max="150"
+      			  	class="form-control"
+      			  	placeholder="Age"
+      			  	required
+      			/>
+    		</div>
+    		<div class="form-group">
+    		  	<p>What branch have you visited lately?
+    		  	</p>
+    		  	<select id="dropdown" name="role" class="			form-control" required>
+    		  	  	<option disabled selected value>Select a Branch</option>
+    		  	  	<option value="sm-baguio">Sm Baguio</option>
+    		  	  	<option value="porta">Porta Vaga Mall</option>
+    		  	  	<option value="moa">SM Mall of Asia</option>
+    		  	  	<option value="sm-north">SM North Edsa</option>
+    		  	  	<option value="sm-tarlac">SM Tarlac</option>
+    		  	</select>
+    		</div>
+    		<div class="form-group">
+      			<p>Are you satisfied with our service? <span class="clue">(1 is considered to be the worst and 5 to be the best)</span></p>
+      			<label>
+      			  <input
+      			    name="day-rating"
+      			    value="1"
+      			    type="radio"
+      			    class="input-radio"
+      			  />1</label>
+      			<label>
+      			  <input
+      			    name="day-rating"
+      			    value="2"
+      			    type="radio"
+      			    class="input-radio"
+      			  />2</label>
+			
+      			<label
+      			  ><input
+      			    name="day-rating"
+      			    value="3"
+      			    type="radio"
+      			    class="input-radio"
+      			  />3</label>
+      			<label
+      			  ><input
+      			    name="day-rating"
+      			    value="4"
+      			    type="radio"
+      			    class="input-radio"
+      			  />4</label>
+      			<label
+      			  ><input
+      			    name="day-rating"
+      			    value="5"
+      			    type="radio"
+      			    class="input-radio"
+      			  />5</label>
+    		</div>
+    		<div class="form-group">
+    			<p>
+    			  What field do you want us to improve with?
+    			  <span class="clue">(Check all that apply)</span>
+    			</p>
+			   	<label><input
+    				name="improve"
+    				value="Cleanliness"
+    				type="checkbox"
+    				class="input-checkbox"
+    			/>Cleanliness</label>
+    			<label><input
+    				name="improve"
+    				value="Additional Menu"
+    				type="checkbox"
+    				class="input-checkbox"
+    			/>Additional Menu</label>
+    			<label><input
+    				name="improve"
+    				value="Quality"
+    				type="checkbox"
+    				class="input-checkbox"
+    			/>Quality</label>
+    			<label><input
+    				name="improve"
+    				value="Price"
+    				type="checkbox"
+    				class="input-checkbox"
+    			/>Price</label>
+    			<label><input
+    				name="improve"
+    				value="Discounts and Vouchers"
+    				type="checkbox"
+    				class="input-checkbox"
+    			/>Discount and Vouchers</label>
+    			<label><input
+    				name="improve"
+    				value="souvenirs"
+    				type="checkbox"
+    				class="input-checkbox"
+    			/>Souvenirs</label>
+    			<label><input
+    				name="improve"
+    				value="Facilities"
+    				type="checkbox"
+    				class="input-checkbox"
+    			/>Facilities</label>
+    		</div>
+    		<div class="form-group">
+    			<p>For any suggestions please let us know:</p>
+    			<textarea
+    				id="story-for-the-day"
+    				class="input-textarea"
+    				name="comment"
+    				placeholder="Insert suggestions here"
+    			></textarea>
+    		</div>
+
+    		<div class="form-group">
+    			<button type="submit" id="submit" class="submit-button">
+    			  Submit
+    			</button>
+    		</div>
+		</form>
+		<p id="description">Thankyou for sharing your time with us!<br> You can visit our website <a id="dscrptn-link" href="https://www.starbucks.com/" target="_blank">@starbucks.com</a>
+		</p>
+		</div>
+	</section>
+</body>
+</html>
